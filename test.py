@@ -1,8 +1,7 @@
 import openai
 
 # Set your OpenAI API key
-openai.api_key = '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'
-
+openai.api_key = ''
 # Function to get a response from OpenAI GPT-4
 def get_openai_response(prompt):
     response = openai.Completion.create(
