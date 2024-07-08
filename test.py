@@ -1,7 +1,10 @@
 import openai
+from dotenv import load_dotenv
 
-# Set your OpenAI API key
-openai.api_key = ''
+# Load the API key from .env file
+load_dotenv()
+openai.api_key = os.getenv('OPENAI_API_KEY')
+
 # Function to get a response from OpenAI GPT-4
 def get_openai_response(prompt):
     response = openai.Completion.create(
